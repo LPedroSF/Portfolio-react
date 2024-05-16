@@ -241,7 +241,19 @@ nav {
 /*
   Modal Section
 */
-
+.modal {
+  position: absolute;
+  width: 80%;
+  max-width: 1200px;
+  border-radius: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 800px;
+  overflow: hidden;
+  display: flex;
+  padding: 0;
+}
 
 .modal__button {
   width: 60px;
@@ -607,6 +619,7 @@ footer {
 
   .modal__half {
     width: 100%;
+    border-radius: 20px;
   }
 
   .projects{
@@ -663,6 +676,10 @@ footer {
 
   .language {
     width: 50%;
+  }
+
+  .project__description {
+    top: 30%;
   }
 
   .project__description--title{

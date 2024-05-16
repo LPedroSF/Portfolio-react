@@ -2,22 +2,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useState } from 'react';
 import Modal from 'react-modal';
 
-const modalStyle = {
-  content: {
-    position: "absolute",
-    width: "80%",
-    maxWidth: "1200px",
-    borderRadius: "20px",
-    top: "50%",
-    left: "50%",
-    transform: "translate(-50%, -50%)",
-    height: "800px",
-    overflow: "hidden",
-    display: "flex",
-    padding: 0,
-  },
-};
-
 function email () {
   console.log("email")
 }
@@ -35,9 +19,8 @@ function Contact() {
 
       <Modal
         isOpen = { show }
-        style = { modalStyle } 
         onRequestClose={closeModal}
-        contentLabel="Example Modal"
+        className="modal"
       >
         <div className="modal__half modal__info">
           <h1 className = "modal__title">A little bit of info!</h1>
